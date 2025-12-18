@@ -1,1 +1,4 @@
+HEAD
 Wersja z gałęzi TEST_2
+Wersja z gałęzi TEST
+test
