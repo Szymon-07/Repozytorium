@@ -1,0 +1,10 @@
+# Pliki konfiguracyjne PyCharma
+.idea/
+
+# Pliki tymczasowe Pythona (skompilowane)
+__pycache__/
+*.pyc
+
+# Wirtualne środowiska (jeśli będziesz ich używał)
+venv/
+env/
