@@ -5,6 +5,7 @@ def wypisz_parzyste(lista_liczb):
         if liczba % 2 == 0:
             print(liczba)
 
+
 # Wywołanie
 lista_10_liczb = list(range(10))
 
