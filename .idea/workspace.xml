@@ -31,6 +31,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
     "Python.zad_1.executor": "Run",
     "Python.zad_2.executor": "Run",
     "Python.zad_3.executor": "Run",
@@ -173,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767870055903</updated>
       <workItem from="1767870056940" duration="627000" />
-      <workItem from="1767875852515" duration="5981000" />
+      <workItem from="1767875852515" duration="7750000" />
     </task>
     <servers />
   </component>
@@ -184,5 +185,6 @@
     <SUITE FILE_PATH="coverage/Repozytorium2$zad_2.coverage" NAME="zad_2 Coverage Results" MODIFIED="1767870611464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Repozytorium2$zad_3.coverage" NAME="zad_3 Coverage Results" MODIFIED="1767870513828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Repozytorium2$zad_1.coverage" NAME="zad_1 Coverage Results" MODIFIED="1767870353228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Repozytorium2$main.coverage" NAME="main Coverage Results" MODIFIED="1767894966178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
