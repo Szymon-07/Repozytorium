@@ -1,8 +1,11 @@
 from typing import List
 from zad_1 import Student
 
+
 class Library:
-    def __init__(self, city: str, street: str, zip_code: str, open_hours: str, phone: str):
+    def __init__(
+        self, city: str, street: str, zip_code: str, open_hours: str, phone: str
+    ):
         self.city = city
         self.street = street
         self.zip_code = zip_code
@@ -12,8 +15,19 @@ class Library:
     def __str__(self):
         return f"Biblioteka: {self.city}, ul. {self.street}"
 
+
 class Employee:
-    def __init__(self, first_name: str, last_name: str, hire_date: str, birth_date: str, city: str, street: str, zip_code: str, phone: str):
+    def __init__(
+        self,
+        first_name: str,
+        last_name: str,
+        hire_date: str,
+        birth_date: str,
+        city: str,
+        street: str,
+        zip_code: str,
+        phone: str,
+    ):
         self.first_name = first_name
         self.last_name = last_name
         self.hire_date = hire_date
@@ -26,8 +40,16 @@ class Employee:
     def __str__(self):
         return f"Pracownik: {self.first_name} {self.last_name}"
 
+
 class Book:
-    def __init__(self, library: Library, publication_date: str, author_name: str, author_surname: str, number_of_pages: int):
+    def __init__(
+        self,
+        library: Library,
+        publication_date: str,
+        author_name: str,
+        author_surname: str,
+        number_of_pages: int,
+    ):
         self.library = library
         self.publication_date = publication_date
         self.author_name = author_name
@@ -35,10 +57,15 @@ class Book:
         self.number_of_pages = number_of_pages
 
     def __str__(self):
-        return f"Książka: {self.author_name} {self.author_surname} ({self.library.city})"
+        return (
+            f"Książka: {self.author_name} {self.author_surname} ({self.library.city})"
+        )
+
 
 class Order:
-    def __init__(self, employee: Employee, student: Student, books: List[Book], order_date: str):
+    def __init__(
+        self, employee: Employee, student: Student, books: List[Book], order_date: str
+    ):
         self.employee = employee
         self.student = student
         self.books = books
@@ -48,13 +75,34 @@ class Order:
         books_str = ", ".join([f"{b.author_surname}" for b in self.books])
         return f"Zamówienie ({self.order_date}): Student {self.student.name}, Pracownik {self.employee.last_name}, Książki: [{books_str}]"
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     lib1 = Library("Warszawa", "Marszałkowska 1", "00-001", "8-16", "111-222-333")
     lib2 = Library("Kraków", "Floriańska 2", "30-001", "9-17", "444-555-666")
 
-    emp1 = Employee("Jan", "Kowalski", "2020-01-01", "1990-05-05", "Warszawa", "Polna", "00-002", "111")
-    emp2 = Employee("Anna", "Nowak", "2021-06-01", "1995-10-10", "Kraków", "Leśna", "30-002", "222")
-    emp3 = Employee("Piotr", "Wiśniewski", "2022-03-15", "1998-12-12", "Gdańsk", "Morska", "80-001", "333")
+    emp1 = Employee(
+        "Jan",
+        "Kowalski",
+        "2020-01-01",
+        "1990-05-05",
+        "Warszawa",
+        "Polna",
+        "00-002",
+        "111",
+    )
+    emp2 = Employee(
+        "Anna", "Nowak", "2021-06-01", "1995-10-10", "Kraków", "Leśna", "30-002", "222"
+    )
+    emp3 = Employee(
+        "Piotr",
+        "Wiśniewski",
+        "2022-03-15",
+        "1998-12-12",
+        "Gdańsk",
+        "Morska",
+        "80-001",
+        "333",
+    )
 
     stud1 = Student("Marek", [3, 4, 5])
     stud2 = Student("Kasia", [5, 5, 5])

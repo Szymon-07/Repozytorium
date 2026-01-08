@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Student:
     def __init__(self, name: str, marks: List[int]):
         self.name = name
@@ -12,6 +13,7 @@ class Student:
         average = sum(self.marks) / len(self.marks)
         # Zwraca True jeśli średnia > 50, inaczej False
         return average > 50
+
 
 # Testowanie (zgodnie z poleceniem: jeden zdaje, drugi nie)
 student_zdal = Student("Ania", [60, 70, 80])
