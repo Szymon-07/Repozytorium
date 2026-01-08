@@ -31,10 +31,10 @@ def pobierz_browary() -> None:
         # Pętla po pobranych danych
         for wpis in dane_json:
             nowy_browar = Brewery(
-                name=wpis.get('name', 'Brak nazwy'),
-                city=wpis.get('city', 'Nieznane miasto'),
-                state=wpis.get('state', 'Brak stanu'),
-                country=wpis.get('country', 'Brak kraju')
+                name=wpis.get("name", "Brak nazwy"),
+                city=wpis.get("city", "Nieznane miasto"),
+                state=wpis.get("state", "Brak stanu"),
+                country=wpis.get("country", "Brak kraju"),
             )
             lista_obiektow_brewery.append(nowy_browar)
 
@@ -45,5 +45,5 @@ def pobierz_browary() -> None:
         print("Nie udało się połączyć z API")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pobierz_browary()

@@ -6,7 +6,7 @@ def przetworz_listy(lista1: list, lista2: list) -> list:
     unikalna = list(set(polaczona))
 
     # 3. Potęgowanie do 3 stopnia (lista składana)
-    wynik = [x ** 3 for x in unikalna]
+    wynik = [x**3 for x in unikalna]
 
     return wynik
 
