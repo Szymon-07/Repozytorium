@@ -1,0 +1,29 @@
+name: Sprawdzanie kodu (PEP8)
+
+# Kiedy ma się uruchomić? Przy każdym wypchnięciu kodu (push)
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Pobierz kod z repozytorium
+    - uses: actions/checkout@v3
+
+    # 2. Zainstaluj Pythona na serwerze GitHuba
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+
+    # 3. Zainstaluj narzędzie do sprawdzania (pycodestyle)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pycodestyle
+
+    # 4. Uruchom sprawdzanie kodu
+    - name: Lint with pycodestyle
+      run: |
+        pycodestyle .
